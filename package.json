@@ -1,0 +1,9 @@
+{
+  "name": "learnTesting",
+  "version": "1.0.0",
+  "description": "Learn Javascript Testing",
+  "main": "index.js",
+  "repository": "https://github.com/perjor/learn_testing",
+  "author": "Jordy Pereira",
+  "license": "MIT"
+}
