@@ -10,16 +10,16 @@ I started out watching a Tutorial from [Academind](https://youtu.be/r9HdJ8P6GQI)
 
 ### Advantages
 
-- See errors that happen elsewhere in your code.
-- See a specific error when something goes wrong.
-- Integrate into build workflos (Pull requests etc)
+- See errors that happen elsewhere in your code
+- See a specific error when something goes wrong
+- Integrate into build workflows (Pull requests etc)
 - Write better code
 
 ### Kind of tests
 
-- Unit testing: testing one isolated function.
-- Integration testing: test functions that use each other.
-- E2E testing: Simulates a user in a headless browser.
+- Unit testing: testing one isolated function
+- Integration testing: test functions that use each other
+- E2E testing: Simulates a user in a headless browser
 
 ### Tools needed
 
@@ -30,22 +30,22 @@ I started out watching a Tutorial from [Academind](https://youtu.be/r9HdJ8P6GQI)
 
 ### Unit test
 
-- Install jest
-- Make .spec.js file
-- Import function
+- Install `jest`
+- Make `.spec.js` file
+- Import function that you want to test
 - test(): takes a description and a callback function
-- expect()
+- expect() this is the test
 
 ### Run the test
 
-- jest finds all files names .test.js and .spec.js
+- jest finds all files named .test.js and .spec.js
 - run `jest`
-- If the test fails it prints the expected output and the received output.
-- add `--watch` to rerun tests when you save your code.
+- If the test fails it prints the expected output and the received output
+- add `--watch` to rerun tests when you save your code
 
 ### How to test
 
-- Test if the data is used, by using double checks or test the opposite
+Test if the data is used, by using double checks with different data or test the opposite
 
 ### Integration Test
 
@@ -55,12 +55,13 @@ I started out watching a Tutorial from [Academind](https://youtu.be/r9HdJ8P6GQI)
 
 - Install `puppeteer`
 - You can find all the commands in the [doc](https://github.com/GoogleChrome/puppeteer)
+- This will run a browser and click buttons or type text
 
 ## Let's try a TDD Tutorial
 
 _20 October 2018_
 
-I found a great [article](https://medium.com/magnetis-backstage/working-an-application-in-vue-js-with-tdd-an-extensive-guide-for-people-who-have-time-part-1-3be791dafa2b) with a step by step tutorial, making a simple Vue app in TDD. TDD, Test Driven Development is a method where you write tests as you make your project and keep testing as you make it.
+I found a great [article](https://medium.com/magnetis-backstage/working-an-application-in-vue-js-with-tdd-an-extensive-guide-for-people-who-have-time-part-1-3be791dafa2b) with a step by step tutorial, making a simple Vue app in TDD. Test Driven Development is when you write tests before the component and keep testing as you make it.
 
 I documented me following the tutorial [here](./TDD-Tutorial/)
 
