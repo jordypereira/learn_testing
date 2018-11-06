@@ -79,3 +79,31 @@ Today I watched [Edd Yerburgh - Unit testing Vue components Why test, what to te
 [Jest](https://vue-test-utils.vuejs.org/guides/testing-single-file-components-with-jest.html) is easy to set up. I go briefly over his talk [here](./Edd-Yerburgh/).
 
 He sums up the benefits of testing, how to get started quickly, what to test and what to expect.
+
+## Academind tests async JS code
+
+In this [video](https://www.youtube.com/watch?v=4Fl5GH4eYZ8) he'll be mocking async code.
+
+You can just call the api function and then compare the output to what you think the output should be. But you don't want to call an api in a test.
+You don't test if the API works in your frontend.
+So we have to mock test. This is where we replace other packages with dummy content.  
+Create `__mocks__` folder where you remake the fetch function with dummy data that the api returns.
+
+```js
+// __mocks__/http.js
+const fetchData = () => {
+  return Promise.resolve({ title: 'delectus aut autem' })
+}
+exports.fetchData = fetchData
+```
+
+Now if you call `jest.mock('./http.js')` jest will replace the real http function with the mocked function.  
+Now to mock axios you can make an axios.js file. Jest will automatically use this because axios is a third party library.
+
+```js
+export const get = url => {
+  return { data: { title: 'delectus aut autem' } }
+}
+```
+
+You just replace the function with your own version.
