@@ -7,3 +7,4 @@
 - [Vue-Test-Utils](https://vue-test-utils.vuejs.org/)
 - [Testing SFC with Jest](https://vue-test-utils.vuejs.org/guides/testing-single-file-components-with-jest.html)
 - [Jest](https://jestjs.io/)
+- [Laravel Vue Jest](https://dev.to/bahdcoder_47/setting-up-jest-in-a-laravel-project-59b7)
