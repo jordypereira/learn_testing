@@ -12,8 +12,9 @@ module.exports = {
     sidebar: [
       '/',
       '/TDD-Tutorial/',
-      '/resources/',
       ['/Edd-Yerburgh/', 'Edd Yerburgh Talk'],
+      ['/demos/', 'Demo'],
+      '/resources/',
     ],
   },
-};
+}
